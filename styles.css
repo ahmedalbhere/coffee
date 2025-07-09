@@ -1,0 +1,124 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  text-align: center;
+  background-color: #f5f5dc;
+  padding: 20px;
+  margin: 0;
+}
+
+#menu, #order-summary {
+  display: none;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #fff;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 350px;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+input, textarea, button, select {
+  padding: 10px;
+  margin: 8px 0;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+button {
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #A0522D;
+}
+
+h1, h2, h3 {
+  color: #5D4037;
+}
+
+#table-input {
+  margin: 30px auto;
+}
+
+.category-title {
+  background-color: #D2B48C;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 20px auto 10px;
+  width: fit-content;
+}
+
+.call-waiter {
+  background-color: #6D4C41 !important;
+}
+
+/* أنماط لوحة الإدارة */
+.admin-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#admin-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#menu-items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#menu-items .item button {
+  width: auto;
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background-color: #f44336 !important;
+}
+
+.status-preparing {
+  color: #FFA000;
+}
+
+.status-ready {
+  color: #388E3C;
+}
+
+.status-delivered {
+  color: #1976D2;
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 95%;
+  }
+  
+  input, textarea, button {
+    font-size: 16px;
+  }
+}
